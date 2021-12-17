@@ -1,0 +1,75 @@
+// Start Header
+header {
+    background-color: #f3f3f3;
+    padding: 25px 0;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu_nav{
+            display: none;
+        }
+
+        .navBar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+           
+            // NavBar Logo
+            .navbar_logo {
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.3);
+                }
+                span {
+                    font-family: Martel;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 0.1px;
+                    color: #252B42;
+                }
+            }
+
+            .navbar__menu {
+                .navbar_menu__list {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    li{
+                       a{
+                        &:hover{
+                            color: #784F33;                          
+                        }
+                       }
+                    }
+
+                    .navbar_menu__list__item {
+                        a {
+                            font-family: Open Sans;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 24px;
+                            text-align: center;
+                            letter-spacing: 0.2px;
+                            color: #737373;
+                        }
+                    }
+                }
+            }
+        }
+        .navbar__icon{
+            .navbar_icon__mob{
+                display: none;
+            }
+            .navbar_icon__dek{
+                cursor: pointer;
+                display: flex;
+                justify-content: end;
+                margin-right: 30px;
+            }
+        }
+    }
+}

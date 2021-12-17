@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Practice Advice')">Practice Advice</button>
+  <button class="tablinks" onclick="openCity(event, 'Who we are')">Who we are</button>
+</div>
+
+<div id="Practice Advice" class="tabcontent">
+  <div class="general">
+    <div class="form-wrapper">
+        <input id="title" type="text" placeholder="Enter title...">
+        <input id="desc" type="text" placeholder="Enter description...">
+        <input id="img" type="file" placeholder="Choose image">
+        <button class="send">Send data</button>
+    </div>
+    <button class="clear">Clear API</button>
+  </div>
+</div>
+
+<div id="Who we are" class="tabcontent">
+   <div class="general">
+    <div class="form-wrapper">
+        <input id="icon" type="file" placeholder="Choose image">
+        <input id="titles" type="text" placeholder="Enter title...">
+        <input id="dec" type="text" placeholder="Enter description...">
+        <button class="sends">Send data</button>
+    </div>
+    <button class="clears">Clear API</button>
+   </div>
+</div>
+
+
+    
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
